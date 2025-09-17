@@ -197,10 +197,17 @@ if st.sidebar.button("Fetch Data"):
             st.subheader("📄 Trade Log")
             st.dataframe(pd.DataFrame(trade_log))
 
+            # Disclaimer
+            st.subheader("**Disclaimer**")
+            st.write("** The system is a research and educational tool, not investment advice.")
+            st.write("** Backtested results do not guarantee future performance.")
+            st.write("** Users are responsible for their own investment decisions.")
+
     except Exception as e:
         st.error(f"Error fetching data: {e}")
 else:
     st.info("👈 Enter stock details and click *Fetch Data* to begin.")
+
 
 
 
