@@ -121,7 +121,7 @@ def backtest(data, investment_amount, stop_loss_pct, risk_pct):
 # Code for displaying data on Streamlit Dashboard
 st.set_page_config(page_title="Trading Bot Dashboard", layout="wide")
 st.title("📈 Automated Trading System Dashboard")
-st.write("EMA (5 & 13) Crossover Strategy with Risk Management Backtesting")
+#st.write("EMA (5 & 13) Crossover Strategy with Risk Management Backtesting")
 #st.write("EMA (5 & 13) Crossover + RSI + MACD Strategy with Risk Management")
 
 # Sidebar inputs- User to select Investment amount, Stop loss%, Risk% for calculating number of stocks to be purchased and handle Stop loss
@@ -201,6 +201,7 @@ if st.sidebar.button("Fetch Data"):
         st.error(f"Error fetching data: {e}")
 else:
     st.info("👈 Enter stock details and click *Fetch Data* to begin.")
+
 
 
 
